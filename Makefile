@@ -5,3 +5,7 @@ all: \
 
 %.out: %/main.go
 	go build -o $*.out $<
+
+clean:
+	go clean
+	rm -f *.out
